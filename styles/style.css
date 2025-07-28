@@ -1,0 +1,33 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: Arial, Helvetica, sans-serif; background-color: #f2f2f2; display: flex;
+flex-direction: column; min-height: 100vh;}
+.container {flex: 1; padding: 20px; max-width: 600px; margin: auto; text-align: center;}
+h1 {margin-bottom: 20px; color: #000844; text-shadow: 4px 4px 4px rgba(25,3,106,0.6);}
+/*Grupo de entrada*/
+.input-group {display: flex; gap: 10px; margin-bottom: 20px;}
+.input-group input {flex: 1; padding: 10px; font-size: 1rem;}
+#productoInput {background-color: #e1f0fe; color: #000844; font-weight: bold; 
+    border: 1px solid #000844; border-radius: 5px;}
+.input-group button {padding: 10px 20px; background-color: #01cd11; color: #fff; border: none;
+border-radius: 5px; font-size: 1rem; cursor: pointer;}
+.input-group button:hover {background-color: #00fd13; color: #008f0b;}
+/*Lista*/
+ul {list-style: none;}
+li {background-color: #fff; padding: 10px; margin-bottom: 10px; font-size: 1.1rem; border-radius: 5px;
+display: flex; justify-content: space-between; align-items: center; color: #000844; font-weight: bold;}
+li.comprado {text-decoration: line-through; color: gray;}
+li button {background-color: crimson; color: #fff; border: none; 
+            padding: 5px 10px; cursor: pointer; border-radius: 5px;}
+li button:hover {background-color: darkred;}
+
+footer { background-color: #000844; color: #95a2ff; font-weight: bold;
+    text-align: center; padding: 10px 10px; margin-top: auto; }
+
+.redes a { color: white; margin: 0 10px; text-decoration: none; font-size: 14px; }
+.redes a:hover { color: #ae7efc; }
+.redes img { width: 26px; height: 26px; border-radius: 50%; }
+
+@media (max-width: 480px) {
+    .input-group {flex-direction: column;}
+    .input-group button {width: 100%;}
+}
